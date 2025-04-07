@@ -1,0 +1,28 @@
+{
+  "name": "node-scaffold",
+  "version": "1.0.0",
+  "description": "CLI to scaffold JS/TS project structure",
+  "author": "Jeff M",
+  "bin": {
+    "create-node-structure": "./dist/bin/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/bin/index.js",
+    "dev": "ts-node bin/index.ts"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^9.3.7"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
